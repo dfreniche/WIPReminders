@@ -7,6 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "Task.h"
 
 @interface WipRemindersTests : XCTestCase
 
@@ -14,21 +15,37 @@
 
 @implementation WipRemindersTests
 
-- (void)setUp
-{
-    [super setUp];
-    // Put setup code here. This method is called before the invocation of each test method in the class.
+- (void)testCanCreateATask {
+    [MagicalRecord setupCoreDataStackWithInMemoryStore];
+    
+    NSManagedObjectContext *context = [NSManagedObjectContext MR_context];
+    
+    Task *t1 = [[Task alloc] initWithEntity:[NSEntityDescription entityForName:@"Task" inManagedObjectContext:context] insertIntoManagedObjectContext:context];
+    
+    Task *t2 = [NSEntityDescription insertNewObjectForEntityForName:@"Task" inManagedObjectContext:context];
+    
+    Task *t3 = [Task MR_createEntity];
+    
+    XCTAssertNotNil(t1, @"OMG!");
+    XCTAssertNotNil(t2, @"OMG!");
+    XCTAssertNotNil(t3, @"OMG!");
+    
+    
 }
 
-- (void)tearDown
-{
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
-    [super tearDown];
+- (void)testCanDeleteAllTasks {
+    [MagicalRecord setupCoreDataStackWithInMemoryStore];
+    
+    NSManagedObjectContext *context = [NSManagedObjectContext MR_context];
+    XCTAssertNotNil(context, @"OMG");
+    
+    [Task MR_truncateAll];
+    
+    NSArray *allTask = [Task MR_findAll];
+    
+    XCTAssertNotNil(allTask, @"");
+    XCTAssertEqual([allTask count], (NSUInteger)0, @"Count must 0 but is %d", [allTask count]);
 }
 
-- (void)testExample
-{
-    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
-}
 
 @end

@@ -6,7 +6,23 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		99D393C118BE0F6A006BB4DD /* Mogenerator */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 99D393C218BE0F6A006BB4DD /* Build configuration list for PBXAggregateTarget "Mogenerator" */;
+			buildPhases = (
+				99D393C518BE0FE5006BB4DD /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = Mogenerator;
+			productName = Mogenerator;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
+		3DDE64E49D0D44D8830FEE87 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EBA1027F85DC481EB84FA423 /* libPods.a */; };
+		76C24CC5CC7B40D99802A280 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EBA1027F85DC481EB84FA423 /* libPods.a */; };
 		99D3938218BE0A81006BB4DD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99D3938118BE0A81006BB4DD /* Foundation.framework */; };
 		99D3938418BE0A81006BB4DD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99D3938318BE0A81006BB4DD /* CoreGraphics.framework */; };
 		99D3938618BE0A81006BB4DD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99D3938518BE0A81006BB4DD /* UIKit.framework */; };
@@ -16,8 +32,6 @@
 		99D3939418BE0A81006BB4DD /* WRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 99D3939318BE0A81006BB4DD /* WRAppDelegate.m */; };
 		99D3939718BE0A81006BB4DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99D3939518BE0A81006BB4DD /* Main.storyboard */; };
 		99D3939A18BE0A81006BB4DD /* WipReminders.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 99D3939818BE0A81006BB4DD /* WipReminders.xcdatamodeld */; };
-		99D3939D18BE0A81006BB4DD /* WRMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99D3939C18BE0A81006BB4DD /* WRMasterViewController.m */; };
-		99D393A018BE0A81006BB4DD /* WRDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99D3939F18BE0A81006BB4DD /* WRDetailViewController.m */; };
 		99D393A218BE0A81006BB4DD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99D393A118BE0A81006BB4DD /* Images.xcassets */; };
 		99D393A918BE0A81006BB4DD /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99D393A818BE0A81006BB4DD /* XCTest.framework */; };
 		99D393AA18BE0A81006BB4DD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99D3938118BE0A81006BB4DD /* Foundation.framework */; };
@@ -25,6 +39,12 @@
 		99D393AC18BE0A81006BB4DD /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99D3938718BE0A81006BB4DD /* CoreData.framework */; };
 		99D393B418BE0A81006BB4DD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 99D393B218BE0A81006BB4DD /* InfoPlist.strings */; };
 		99D393B618BE0A81006BB4DD /* WipRemindersTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 99D393B518BE0A81006BB4DD /* WipRemindersTests.m */; };
+		99D393CA18BE12F6006BB4DD /* _Task.m in Sources */ = {isa = PBXBuildFile; fileRef = 99D393C718BE12F6006BB4DD /* _Task.m */; };
+		99D393CB18BE12F6006BB4DD /* Task.m in Sources */ = {isa = PBXBuildFile; fileRef = 99D393C918BE12F6006BB4DD /* Task.m */; };
+		99D393D018BE4AC7006BB4DD /* WRDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99D393CD18BE4AC7006BB4DD /* WRDetailViewController.m */; };
+		99D393D118BE4AC7006BB4DD /* WRMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99D393CF18BE4AC7006BB4DD /* WRMasterViewController.m */; };
+		99D393D418BE60FE006BB4DD /* WRTaskCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 99D393D318BE60FE006BB4DD /* WRTaskCell.m */; };
+		99D393D618BE615A006BB4DD /* WRPersonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 99D393D518BE615A006BB4DD /* WRPersonTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +58,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00D4EF24F08B49CF921DB0A4 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		99D3937E18BE0A81006BB4DD /* WipReminders.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WipReminders.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99D3938118BE0A81006BB4DD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		99D3938318BE0A81006BB4DD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -51,16 +72,24 @@
 		99D3939318BE0A81006BB4DD /* WRAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WRAppDelegate.m; sourceTree = "<group>"; };
 		99D3939618BE0A81006BB4DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		99D3939918BE0A81006BB4DD /* WipReminders.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WipReminders.xcdatamodel; sourceTree = "<group>"; };
-		99D3939B18BE0A81006BB4DD /* WRMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WRMasterViewController.h; sourceTree = "<group>"; };
-		99D3939C18BE0A81006BB4DD /* WRMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WRMasterViewController.m; sourceTree = "<group>"; };
-		99D3939E18BE0A81006BB4DD /* WRDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WRDetailViewController.h; sourceTree = "<group>"; };
-		99D3939F18BE0A81006BB4DD /* WRDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WRDetailViewController.m; sourceTree = "<group>"; };
+		99D3939B18BE0A81006BB4DD /* WRDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = WRDetailViewController.h; path = Controller/WRDetailViewController.h; sourceTree = "<group>"; };
 		99D393A118BE0A81006BB4DD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		99D393A718BE0A81006BB4DD /* WipRemindersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WipRemindersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		99D393A818BE0A81006BB4DD /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		99D393B118BE0A81006BB4DD /* WipRemindersTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WipRemindersTests-Info.plist"; sourceTree = "<group>"; };
 		99D393B318BE0A81006BB4DD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		99D393B518BE0A81006BB4DD /* WipRemindersTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WipRemindersTests.m; sourceTree = "<group>"; };
+		99D393C618BE12F6006BB4DD /* _Task.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = _Task.h; path = Model/_Task.h; sourceTree = "<group>"; };
+		99D393C718BE12F6006BB4DD /* _Task.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = _Task.m; path = Model/_Task.m; sourceTree = "<group>"; };
+		99D393C818BE12F6006BB4DD /* Task.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Task.h; path = Model/Task.h; sourceTree = "<group>"; };
+		99D393C918BE12F6006BB4DD /* Task.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Task.m; path = Model/Task.m; sourceTree = "<group>"; };
+		99D393CD18BE4AC7006BB4DD /* WRDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WRDetailViewController.m; path = Controller/WRDetailViewController.m; sourceTree = "<group>"; };
+		99D393CE18BE4AC7006BB4DD /* WRMasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WRMasterViewController.h; path = Controller/WRMasterViewController.h; sourceTree = "<group>"; };
+		99D393CF18BE4AC7006BB4DD /* WRMasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WRMasterViewController.m; path = Controller/WRMasterViewController.m; sourceTree = "<group>"; };
+		99D393D218BE60FE006BB4DD /* WRTaskCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WRTaskCell.h; path = View/WRTaskCell.h; sourceTree = "<group>"; };
+		99D393D318BE60FE006BB4DD /* WRTaskCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WRTaskCell.m; path = View/WRTaskCell.m; sourceTree = "<group>"; };
+		99D393D518BE615A006BB4DD /* WRPersonTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WRPersonTests.m; sourceTree = "<group>"; };
+		EBA1027F85DC481EB84FA423 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +101,7 @@
 				99D3938818BE0A81006BB4DD /* CoreData.framework in Frameworks */,
 				99D3938618BE0A81006BB4DD /* UIKit.framework in Frameworks */,
 				99D3938218BE0A81006BB4DD /* Foundation.framework in Frameworks */,
+				3DDE64E49D0D44D8830FEE87 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +113,7 @@
 				99D393AC18BE0A81006BB4DD /* CoreData.framework in Frameworks */,
 				99D393AB18BE0A81006BB4DD /* UIKit.framework in Frameworks */,
 				99D393AA18BE0A81006BB4DD /* Foundation.framework in Frameworks */,
+				76C24CC5CC7B40D99802A280 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +127,7 @@
 				99D393AF18BE0A81006BB4DD /* WipRemindersTests */,
 				99D3938018BE0A81006BB4DD /* Frameworks */,
 				99D3937F18BE0A81006BB4DD /* Products */,
+				00D4EF24F08B49CF921DB0A4 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -116,6 +148,7 @@
 				99D3938518BE0A81006BB4DD /* UIKit.framework */,
 				99D3938718BE0A81006BB4DD /* CoreData.framework */,
 				99D393A818BE0A81006BB4DD /* XCTest.framework */,
+				EBA1027F85DC481EB84FA423 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -125,11 +158,9 @@
 			children = (
 				99D3939218BE0A81006BB4DD /* WRAppDelegate.h */,
 				99D3939318BE0A81006BB4DD /* WRAppDelegate.m */,
-				99D3939518BE0A81006BB4DD /* Main.storyboard */,
-				99D3939B18BE0A81006BB4DD /* WRMasterViewController.h */,
-				99D3939C18BE0A81006BB4DD /* WRMasterViewController.m */,
-				99D3939E18BE0A81006BB4DD /* WRDetailViewController.h */,
-				99D3939F18BE0A81006BB4DD /* WRDetailViewController.m */,
+				99D393CC18BE4A58006BB4DD /* Model */,
+				99D393BF18BE0AC9006BB4DD /* View */,
+				99D393C018BE0AD5006BB4DD /* Controller */,
 				99D393A118BE0A81006BB4DD /* Images.xcassets */,
 				99D3939818BE0A81006BB4DD /* WipReminders.xcdatamodeld */,
 				99D3938A18BE0A81006BB4DD /* Supporting Files */,
@@ -152,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				99D393B518BE0A81006BB4DD /* WipRemindersTests.m */,
+				99D393D518BE615A006BB4DD /* WRPersonTests.m */,
 				99D393B018BE0A81006BB4DD /* Supporting Files */,
 			);
 			path = WipRemindersTests;
@@ -166,6 +198,38 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		99D393BF18BE0AC9006BB4DD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				99D3939518BE0A81006BB4DD /* Main.storyboard */,
+				99D393D218BE60FE006BB4DD /* WRTaskCell.h */,
+				99D393D318BE60FE006BB4DD /* WRTaskCell.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		99D393C018BE0AD5006BB4DD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				99D3939B18BE0A81006BB4DD /* WRDetailViewController.h */,
+				99D393CD18BE4AC7006BB4DD /* WRDetailViewController.m */,
+				99D393CE18BE4AC7006BB4DD /* WRMasterViewController.h */,
+				99D393CF18BE4AC7006BB4DD /* WRMasterViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		99D393CC18BE4A58006BB4DD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				99D393C618BE12F6006BB4DD /* _Task.h */,
+				99D393C718BE12F6006BB4DD /* _Task.m */,
+				99D393C818BE12F6006BB4DD /* Task.h */,
+				99D393C918BE12F6006BB4DD /* Task.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -173,9 +237,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 99D393B918BE0A81006BB4DD /* Build configuration list for PBXNativeTarget "WipReminders" */;
 			buildPhases = (
+				2A6D517DCC9D4143A1855090 /* Check Pods Manifest.lock */,
 				99D3937A18BE0A81006BB4DD /* Sources */,
 				99D3937B18BE0A81006BB4DD /* Frameworks */,
 				99D3937C18BE0A81006BB4DD /* Resources */,
+				73A7B3C4E36A4D748FDE1E20 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -190,9 +256,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 99D393BC18BE0A81006BB4DD /* Build configuration list for PBXNativeTarget "WipRemindersTests" */;
 			buildPhases = (
+				9318A78529A7453C8C17A734 /* Check Pods Manifest.lock */,
 				99D393A318BE0A81006BB4DD /* Sources */,
 				99D393A418BE0A81006BB4DD /* Frameworks */,
 				99D393A518BE0A81006BB4DD /* Resources */,
+				0DC57C50304B4CBC9F3DFB38 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -234,6 +302,7 @@
 			targets = (
 				99D3937D18BE0A81006BB4DD /* WipReminders */,
 				99D393A618BE0A81006BB4DD /* WipRemindersTests */,
+				99D393C118BE0F6A006BB4DD /* Mogenerator */,
 			);
 		};
 /* End PBXProject section */
@@ -259,16 +328,95 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0DC57C50304B4CBC9F3DFB38 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2A6D517DCC9D4143A1855090 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		73A7B3C4E36A4D748FDE1E20 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9318A78529A7453C8C17A734 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		99D393C518BE0FE5006BB4DD /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "mogenerator --template-var arc=true -O WipReminders/Model -m WipReminders/WipReminders.xcdatamodeld/WipReminders.xcdatamodel/";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		99D3937A18BE0A81006BB4DD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99D393CB18BE12F6006BB4DD /* Task.m in Sources */,
+				99D393CA18BE12F6006BB4DD /* _Task.m in Sources */,
 				99D3939018BE0A81006BB4DD /* main.m in Sources */,
+				99D393D418BE60FE006BB4DD /* WRTaskCell.m in Sources */,
+				99D393D118BE4AC7006BB4DD /* WRMasterViewController.m in Sources */,
 				99D3939A18BE0A81006BB4DD /* WipReminders.xcdatamodeld in Sources */,
+				99D393D018BE4AC7006BB4DD /* WRDetailViewController.m in Sources */,
 				99D3939418BE0A81006BB4DD /* WRAppDelegate.m in Sources */,
-				99D3939D18BE0A81006BB4DD /* WRMasterViewController.m in Sources */,
-				99D393A018BE0A81006BB4DD /* WRDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +425,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				99D393B618BE0A81006BB4DD /* WipRemindersTests.m in Sources */,
+				99D393D618BE615A006BB4DD /* WRPersonTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,6 +541,7 @@
 		};
 		99D393BA18BE0A81006BB4DD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00D4EF24F08B49CF921DB0A4 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -405,6 +555,7 @@
 		};
 		99D393BB18BE0A81006BB4DD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00D4EF24F08B49CF921DB0A4 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -418,6 +569,7 @@
 		};
 		99D393BD18BE0A81006BB4DD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00D4EF24F08B49CF921DB0A4 /* Pods.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WipReminders.app/WipReminders";
@@ -441,6 +593,7 @@
 		};
 		99D393BE18BE0A81006BB4DD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00D4EF24F08B49CF921DB0A4 /* Pods.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WipReminders.app/WipReminders";
@@ -455,6 +608,20 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+		99D393C318BE0F6A006BB4DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		99D393C418BE0F6A006BB4DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -477,6 +644,7 @@
 				99D393BB18BE0A81006BB4DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		99D393BC18BE0A81006BB4DD /* Build configuration list for PBXNativeTarget "WipRemindersTests" */ = {
 			isa = XCConfigurationList;
@@ -485,6 +653,16 @@
 				99D393BE18BE0A81006BB4DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		99D393C218BE0F6A006BB4DD /* Build configuration list for PBXAggregateTarget "Mogenerator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99D393C318BE0F6A006BB4DD /* Debug */,
+				99D393C418BE0F6A006BB4DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
